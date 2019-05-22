@@ -1,14 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:helloworld3"
-             x:Class="helloworld3.MainPage">
+<ContentPage
+    x:Class="helloworld3.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+    xmlns:local="clr-namespace:helloworld3">
+    <StackLayout Spacing="40" VerticalOptions="Center">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Image Margin="40,20,40,20" Source="bmclogo.PNG" />
+
+
+        <Entry
+            x:Name="UserName"
+            Margin="40,20,40,20"
+            BackgroundColor="White"
+            Placeholder="Username"
+            PlaceholderColor="#A1A1A1" />
+
+        <Entry
+            x:Name="Password"
+            Margin="40,20,40,20"
+            BackgroundColor="White"
+            Placeholder="Password"
+            PlaceholderColor="#A1A1A1" />
+        <Button
+            x:Name="loginbtn"
+            Margin="40,20,40,20"
+            BackgroundColor="#FC6600"
+            Clicked="Loginbtn_Clicked"
+            Text="SIGN IN"
+            TextColor="White" />
     </StackLayout>
-
 </ContentPage>

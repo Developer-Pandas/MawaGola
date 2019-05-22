@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="helloworld3.Page2"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms">
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" />-->
+            <Label
+                FontSize="Large"
+                HorizontalOptions="Start"
+                Text=" Schedule Your Day" />
+
+
+
+
+            <Entry
+                x:Name="LaevingFrom"
+                Margin="20,10,20,10"
+                BackgroundColor="White"
+                Placeholder="Leaving From ?"
+                PlaceholderColor="#A1A1A1" />
+            <Entry
+                x:Name="WhereareyouHeading"
+                Margin="20,10,20,10"
+                BackgroundColor="White"
+                Placeholder="Where are you heading?"
+                PlaceholderColor="#A1A1A1" />
+            <Entry
+                x:Name="Price"
+                Margin="20,10,20,10"
+                BackgroundColor="White"
+                Placeholder="Price"
+                PlaceholderColor="#A1A1A1" />
+
+            <controls:CheckBox
+                Margin="5,5,5,5"
+                DefaultText="Dhayri"
+                FontName="AmericanTypewriter"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand"
+                TextColor="Black" />
+            <controls:CheckBox
+                Margin="5,5,5,5"
+                DefaultText="SinhgadRoad"
+                FontName="AmericanTypewriter"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand"
+                TextColor="Black" />
+            <controls:CheckBox
+                Margin="5,5,5,5"
+                DefaultText="RajaramPool"
+                FontName="AmericanTypewriter"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand"
+                TextColor="Black" />
+            <controls:CheckBox
+                Margin="5,5,5,5"
+                DefaultText="Nul Stop"
+                FontName="AmericanTypewriter"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand"
+                TextColor="Black" />
+            <controls:CheckBox
+                Margin="5,5,5,5"
+                DefaultText="Decaan "
+                FontName="AmericanTypewriter"
+                FontSize="18"
+                HorizontalOptions="FillAndExpand"
+                TextColor="Black" />
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
